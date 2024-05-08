@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- Name to be displayed. -->
+
+<h1 id=my-name></h1>
+
+<script>
+
+    // Writing into an HTML element, using innerHTML. //
+
+
+
+    // Writing into the HTML output using document.write(). //
+
+     const nameElement = document.getElementById('my-name')
+     nameElement.textContent = "Faith";
+
+     document.write('TESTING: document.write')
+
+    //Writing into an alert box, using window.alert().
+
+     window.alert('ALERT: name has changed')
+     alert('NAME CHANGED')
+
+
+     console.log([1,1,1,"triple one"])
+
+
+
+</script>
+
+ <br><br><br>
+
+
+<button onclick="window.print()">Click to connect to printer.</button>
+
+
+
+<!--Writing into the browser console, using console.log(). -->
+
+<script>
+
+var x;
+let y;
+
+x = 10
+y = 10
+
+a = x+y
+console.log(a)
+
+b = x*y
+console.log(b)
+
+c= x/y
+console.log(c)
+
+</script>
+
+<!-- Inner HTML -->
+<p id="car"></p>
+<script>
+    let CarName = "MERCEDES"; document.getElementById("car").innerHTML =    CarName;
+</script>
+
+
+
+
+
+</body>
+</html>

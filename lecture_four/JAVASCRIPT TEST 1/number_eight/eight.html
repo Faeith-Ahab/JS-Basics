@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIGHT</title>
+</head>
+<body>
+    
+    <button onclick="logMovieInfo()">Log Movie Information</button>
+
+<script>
+  // Object to store movie information
+  const favoriteMovie = {
+    title: "Spirited Away",
+    duration: 125, // Minutes
+    star: {
+      name: "Chihiro Ogino",
+      country: "Japan",
+      age: "10 (movie age)" // Clarify age as it's within the movie context
+    }
+  };
+
+  // Function to log movie information
+  function logMovieInfo() {
+    const { title, duration, star: { name, country, age } } = favoriteMovie;
+
+    console.log(`${title} lasts for ${duration} minutes.`);
+    console.log(`Star: ${name} is ${age} and born in ${country}.`);
+  }
+</script>
+
+
+
+</body>
+</html>

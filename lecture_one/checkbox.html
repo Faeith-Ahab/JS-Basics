@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <img id="myImage" src="./on.png" style="width:100px; cursor:pointer;" onclick="toggleCheckbox()">
+
+<script>
+  function toggleCheckbox() {
+    var image = document.getElementById('myImage');
+    if (image.src.includes('on.png')) {
+      image.src = './off.png'; 
+    } else {
+      image.src = './on.png';
+    }
+  }
+</script>
+
+
+</body>
+</html>

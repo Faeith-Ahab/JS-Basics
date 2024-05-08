@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+
+    <br><br>
+<!--  -->
+<!--This form doesn't allow any input of any non numerical character -->
+<!--Also doesn't allow you to type in any number, you have to select from the arrowheads-->
+
+<h2>FORM does't allow input of non numerical character.</h2>
+
+    <form>
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" required>
+        <span id="errorMessage" style="color:red;"></span>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <script>
+        const numberInput = document.getElementById("numberInput");
+        const errorMessage = document.getElementById("errorMessage");
+      
+        numberInput.addEventListener("input", () => {
+          if (isNaN(numberInput.value)) {
+            errorMessage.textContent = "Please enter a valid number.";
+          } else {
+            errorMessage.textContent = "";
+          }
+        });
+      </script>
+
+      <br><br>
+
+
+
+<!--  -->
+<!--This form doesn't allow any input of any non numerical character -->
+<h2>FORM does't allow input of non numerical character.</h2>
+
+<form id="myForm">
+    <label for="numberInput">Enter a number:</label><br>
+    <input type="number" id="numberInput" name="numberInput" required><br>
+    <span id="errorMessage" style="color: red;"></span>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // JavaScript code for validation
+    const form = document.getElementById("myForm");
+    const thenumberInput = document.getElementById("thenumberInput");
+    const theerrorMessage = document.getElementById("theerrorMessage");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent form submission
+
+      const inputValue = numberInput.value;
+
+      if (isNaN(inputValue)) {
+        theerrorMessage.textContent = "Please enter a valid number.";
+      } else {
+        // Number is valid, you can process the form here
+        console.log("Valid number entered:", inputValue);
+      }
+    });
+  </script>
+
+
+    <br><br>
+
+<!--  -->
+<!--This form allows typing in any input of any non numerical character but rejects it-->
+<h2>FORM does't allow input of non numerical character, rejects and alerts.</h2>
+
+<form>
+    <label for="numericInput">Enter a number:</label>
+    <input type="text" id="numericInput" oninput="validateNumber()">
+    <span id="errorMsg" style="color: red;"></span>
+  </form>
+  
+  <script>
+  function validateNumber() {
+    const input = document.getElementById("numericInput");
+    const errorMsg = document.getElementById("errorMsg");
+  
+    if (isNaN(input.value)) {
+      errorMsg.textContent = "Please enter a numeric value.";
+    } else {
+      errorMsg.textContent = "";
+    }
+  }
+  </script>
+
+
+
+
+</body>
+</html>

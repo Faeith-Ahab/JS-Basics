@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE</title>
+</head>
+<body>
+
+
+    <h3>Script to display info on button click.</h3>
+
+<button type="button"
+
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click this button to display Date and Time.
+
+</button>
+
+    <p id="demo"></p>
+
+
+
+
+<h3>Script to display a  bulb on and off.</h3>
+
+<button onclick="document.getElementById('myImage').src='./onbulb.jpg' ">Turn on the light</button>
+
+<img id="myImage" src="./onbulb.jpg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='./offbulb.jpg'">Turn off the light</button>
+
+
+
+
+
+
+
+<h3>Script to change the font size of an element with id “text”.</h3>
+
+<p id="text">JavaScript, often abbreviated as JS, is a programming language and core technology of the 
+             World Wide Web, alongside HTML and CSS.</p>
+
+<button type="button" onclick="paragraphOne()">Click this button to increase font size<br>of the paragraph above</button>
+ 
+<script>
+
+function paragraphOne() {
+  document.getElementById("text").style.fontSize = "x-large";
+}
+</script>
+
+
+
+
+
+<h3>Script to hide and show an element.</h3>
+
+<p>Click the word "abracadabra" in the button below to magically swish a wand to display something cool.</p>
+
+
+<button onclick="paragraphTwo()"><i>abracadabra</i></button>
+
+<div id="section">
+SOMETHING COOL
+</div>
+
+
+<script>
+function paragraphTwo() {
+  var x = document.getElementById("section");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<style>
+    #section{
+       color:cornflowerblue; 
+       font-size: 30px;
+       padding: 20px;
+    }
+</style>
+
+    
+</body>
+</html>

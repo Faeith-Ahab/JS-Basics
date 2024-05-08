@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+8
+create an object to store the following information about your favourite movie :title(a string), duration(a number),
+and tar(an objet of name, country, and age strings)
+
+create a function to log the movie information like this:"puff the magic dragon lasts for 30 minutes. star :puff is 45 years old and born in uganda."
+
+<
+
+
+9
+write a program to print fibionacci numbers to 100.
+
+10
+write a program to compute the sum of two given integers IN HTML 
+
+def sum_of_integers(num1, num2):
+  """This function calculates the sum of two integers."""
+  return num1 + num2
+
+# Get the first integer from the user
+first_number = int(input("Enter the first integer: "))
+
+# Get the second integer from the user
+second_number = int(input("Enter the second integer: "))
+
+# Call the function to calculate the sum
+result = sum_of_integers(first_number, second_number)
+
+# Print the result
+print(f"The sum of {first_number} and {second_number} is {result}.")
+
+
+
+11
+write a javascript function to split a string and convert it to an array of words
+
+<h1>Enter a string:</h1>
+  <input type="text" id="inputString" placeholder="Type your string here">
+  <button onclick="splitString()">Split String</button>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+
+function splitStringToWords(str) {
+    // Split the string using whitespace as the delimiter
+    return str.split(" ");
+  }
+  
+  // Example usage
+  
+  
+
+
+
+
+  function splitString() {
+    // Get the input string from the element
+    const inputString = document.getElementById("inputString").value;
+  
+    // Split the string into an array of words using whitespace as delimiter
+    const wordArray = inputString.split(" ");
+  
+    // Clear the previous result
+    document.getElementById("result").innerHTML = "";
+  
+    // Loop through the word array and display each word
+    for (let i = 0; i < wordArray.length; i++) {
+      const word = wordArray[i];
+      const resultElement = document.getElementById("result");
+      resultElement.innerHTML += word + "<br>"; // Add a line break after each word
+    }
+  }
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        //1
+        function reverseNumber(num) {
+            return parseInt(num.toString().split('').reverse().join(''));
+        }
+        
+        const reversed = reverseNumber(32243);
+        console.log(reversed)
+
+        //2
+
+        function isPalindrome(str) {
+            const reversedStr = str.split('').reverse().join('');
+            return str === reversedStr;
+        }
+        
+        const result = isPalindrome("madam");
+        console.log(result); 
+
+        //2 a
+
+        function isPalindrome(str) {
+            const reversedStr = str.split('').reverse().join('');
+            return str === reversedStr;
+        }
+        const result1 = isPalindrome("madam");
+        const result2 = isPalindrome("heya");
+        console.log(result1); 
+        console.log(result2); 
+        
+
+        //3
+        function generateCombinations(str) {
+            const combinations = [];
+            for (let i = 0; i < str.length; i++) {
+                for (let j = i + 1; j <= str.length; j++) {
+                    combinations.push(str.slice(i, j));
+                }
+            }
+            return combinations;
+        }
+        
+        const combinations = generateCombinations('dog');
+        console.log(combinations); 
+
+        //4
+
+        function sortString(str) {
+            return str.split('').sort().join('');
+        }
+        
+        
+        const sorted = sortString('webmaster');
+        console.log(sorted);
+
+        //5
+
+        function longestWord(str) {
+            const words = str.split(' ');
+            let longest = '';
+            for (const word of words) {
+                if (word.length > longest.length) {
+                    longest = word;
+                }
+            }
+            return longest;
+        }
+        
+        const longest = longestWord('Web Development Tutorial');
+        console.log(longest); 
+
+        //6
+
+        function capitalizeWords(str) {
+            return str.replace(/\b\w/g, char => char.toUpperCase());
+        }
+        
+        
+        const capitalized = capitalizeWords('the quick brown fox');
+        console.log(capitalized);
+
+        //7
+
+
+        //8
+        //9
+        //10
+
+
+    </script>
+    
+</body>
+</html>

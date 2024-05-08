@@ -1,0 +1,46 @@
+#row {
+    position: relative;
+}
+
+#columnone {
+    position: absolute;
+    top: 60%;
+    left: 60px;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 6px;
+    background-color:#aaa
+    
+ }
+
+#columntwo {
+    position: absolute;
+    top: 400%;
+    left: 350px;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 6px;
+    background-color:#ccc
+    
+}
+
+#columnthree {
+    position: absolute;
+    top: 60%;
+    left: 810px;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 6px;
+    margin-right: 80px;
+    margin-left: 15px;
+    background-color:#aaa
+
+}
+
+#errorMsg{
+color: red;
+}
+
+
+
+    
